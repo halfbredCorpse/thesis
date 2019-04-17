@@ -1,6 +1,6 @@
 from py4j.java_gateway import get_field
 
-class Dqn_1(object):
+class DqnAI(object):
     def __init__(self, gateway):
         self.gateway = gateway
 
@@ -51,7 +51,7 @@ class Dqn_1(object):
         self.cc.skillCancel()
 
         # Just spam kick
-        self.cc.commandCall("B")
+        self.cc.commandCall("2")
 
     # This part is mandatory
     class Java:
