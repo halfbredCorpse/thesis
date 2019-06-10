@@ -10,7 +10,7 @@ def check_args(args):
 			GAME_NUM = int(args[i+1])
 
 def start_game():
-	manager.registerAI("DqnAI", DqnAI(gateway))
+	manager.registerAI("gym_ai", DqnAI(gateway))
 	print("Start game")
 	
 	game = manager.createGame("ZEN", "ZEN", "KeyBoard", "DqnAI", GAME_NUM)

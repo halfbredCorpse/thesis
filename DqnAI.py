@@ -1,3 +1,9 @@
+import tensorflow as tf
+import numpy as np
+import random
+import  time
+import matplotlib.pyplot as plt
+
 from py4j.java_gateway import get_field
 
 class DqnAI(object):
@@ -51,7 +57,9 @@ class DqnAI(object):
         self.cc.skillCancel()
 
         # Just spam kick
-        self.cc.commandCall("2")
+        #self.cc.commandCall("2 3 6 _ A")
+
+
 
     # This part is mandatory
     class Java:
