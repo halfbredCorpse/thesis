@@ -60,7 +60,6 @@ class DqnAI(object):
         #self.cc.commandCall("2 3 6 _ A")
 
 
-
     # This part is mandatory
     class Java:
         implements = ["aiinterface.AIInterface"]
