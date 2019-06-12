@@ -2,7 +2,11 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/FightingICEVsKeyboardPyVer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FightingICEVsKeyboardPyVer" vcs="" />
+    <mapping directory="$PROJECT_DIR$/baselines/baselines/FightingICEVsKeyboardPyVer" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/envs/FightingICEVsKeyboardPyVer" vcs="" />
+    <mapping directory="$PROJECT_DIR$/gym-fightingice" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gym-fightingice/gym_fightingice/envs/FightingICEVsKeyboardPyVer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/gym_fightingice/envs/FightingICEVsKeyboardPyVer" vcs="Git" />
   </component>
 </project>

@@ -1,7 +1,8 @@
 import sys
 from time import sleep
 from py4j.java_gateway import JavaGateway, GatewayParameters, CallbackServerParameters, get_field
-from DqnAI import DqnAI
+#from DqnAI import DqnAI
+from gym_fightingice.envs.Machete import Machete
 
 def check_args(args):
 	for i in range(argc):
@@ -10,10 +11,10 @@ def check_args(args):
 			GAME_NUM = int(args[i+1])
 
 def start_game():
-	manager.registerAI("DqnAI", DqnAI(gateway))
+	manager.registerAI("DqnAI", Machete(gateway))
 	print("Start game")
 	
-	game = manager.createGame("ZEN", "ZEN", "KeyBoard", "DqnAI", GAME_NUM)
+	game = manager.createGame("ZEN", "ZEN", "KeyBoard", "Machete", GAME_NUM)
 	manager.runGame(game)
 	
 	print("After game")
