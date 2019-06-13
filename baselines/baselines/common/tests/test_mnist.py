@@ -3,7 +3,7 @@ import pytest
 # from baselines.acer import acer_simple as acer
 from baselines.common.tests.envs.mnist_env import MnistEnv
 from baselines.common.tests.util import simple_test
-from baselines.FightingICEVsKeyboardPyVer.run import get_learn_function
+from gym_fightingice.envs.FightingICEVsKeyboardPyVer.run import get_learn_function
 from baselines.common.tests import mark_slow
 
 # TODO investigate a2c and ppo2 failures - is it due to bad hyperparameters for this problem?

@@ -2,7 +2,7 @@ import pytest
 from baselines.common.tests.envs.fixed_sequence_env import FixedSequenceEnv
 
 from baselines.common.tests.util import simple_test
-from baselines.FightingICEVsKeyboardPyVer.run import get_learn_function
+from gym_fightingice.envs.FightingICEVsKeyboardPyVer.run import get_learn_function
 from baselines.common.tests import mark_slow
 
 

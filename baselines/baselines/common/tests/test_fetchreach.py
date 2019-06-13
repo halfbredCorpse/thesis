@@ -1,7 +1,7 @@
 import pytest
 import gym
 
-from baselines.FightingICEVsKeyboardPyVer.run import get_learn_function
+from gym_fightingice.envs.FightingICEVsKeyboardPyVer.run import get_learn_function
 from baselines.common.tests.util import reward_per_episode_test
 from baselines.common.tests import mark_slow
 

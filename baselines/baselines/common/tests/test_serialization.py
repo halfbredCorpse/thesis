@@ -7,7 +7,7 @@ import numpy as np
 
 from baselines.common.tests.envs.mnist_env import MnistEnv
 from baselines.common.vec_env.dummy_vec_env import DummyVecEnv
-from baselines.FightingICEVsKeyboardPyVer.run import get_learn_function
+from gym_fightingice.envs.FightingICEVsKeyboardPyVer.run import get_learn_function
 from baselines.common.tf_util import make_session, get_session
 
 from functools import partial
