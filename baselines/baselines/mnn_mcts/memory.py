@@ -1,0 +1,14 @@
+import numpy as np
+from collections import deque
+
+class Memory():
+    def __init__(self, max_size):
+        self.buffer = deque
+
+    def __add__(self, experience):
+        self.buffer.append(experience)
+
+    def sample(self, batch_size):
+        buffer_size = len(self.buffer)
+        index = np.random.choice(np.arange(buffer_size), size=batch_size, replace=False)
+        return [self.buffer[i] for i in index]

@@ -143,15 +143,16 @@ def build_q_func(network, hiddens=[256], dueling=True, layer_norm=False, **netwo
 
     return q_func_builder
 
+
 def cnn_model(unscaled_imgs, **conv_kwargs):
-    scaled_imgs = tf.cast(unscaled_imgs, tf.float32)/255
-    nn = tf.nn.leaky_relu
+    scaled_imgs = tf.placeholder(tf.float32, [None, [84, 84, 4]], name="inputs")
+    nn = tf.nn.relu
     conv1 = nn(conv(scaled_imgs, 'c1', nf=32, rf=8, stride=4, init_scale=np.sqrt(2), **conv_kwargs))
     conv2 = nn(conv(conv1, 'c2', nf=62, rf=4, stride=2, init_scale=np.sqrt(2), **conv_kwargs))
     conv3 = nn(conv(conv2, 'c3', nf=64, rf=3, stride=1, init_scale=np.sqrt(2), **conv_kwargs))
     conv3 = conv_to_fc(conv3)
-    return nn(fc(conv3, 'fc1', nh=512, init_scale=np.sqrt(2)))
-
+    conv4 = nn(fc(conv3, 'fc1', nh=512, init_scale=np.sqrt(2)))
+    return nn(fc(conv4, 'fc2', nh=9, init_scale=np.sqrt(2)))
 
 #register cnn_model
 @register("cnn_model")

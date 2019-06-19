@@ -1,10 +1,12 @@
 import os
 import tempfile
+import gym
 
 import tensorflow as tf
 import zipfile
 import cloudpickle
 import numpy as np
+import matplotlib.pyplot as plt
 
 import baselines.common.tf_util as U
 from baselines.common.tf_util import load_variables, save_variables
@@ -18,6 +20,9 @@ from baselines.mnn_mcts.utils import ObservationInput
 
 from baselines.common.tf_util import get_session
 from baselines.mnn_mcts.models import build_q_func
+
+from baselines.mnn_mcts.frame import stack_frames
+from baselines.common.atari_wrappers import wrap_deepmind
 
 class ActWrapper(object):
     def __init__(self, act, act_params):
@@ -94,7 +99,7 @@ def load_act(path):
 def learn(env,
           network,
           seed=None,
-          lr=5e-4,
+          lr=1e-5, #5e-4,
           total_timesteps=100000,
           buffer_size=50000,
           exploration_fraction=0.1,
@@ -198,6 +203,8 @@ def learn(env,
     def make_obs_ph(name):
         return ObservationInput(observation_space, name=name)
 
+    input = tf.placeholder(tf.float32, [None, 84, 84, 4], name="inputs")
+
     act, train, update_target, debug = mnn_mcts.build_train(
         make_obs_ph=make_obs_ph,
         q_func=q_func,
@@ -257,6 +264,8 @@ def learn(env,
 
 
         for t in range(total_timesteps):
+            if t==0:
+                env = wrap_deepmind(env, frame_stack=True)
             if callback is not None:
                 if callback(locals(), globals()):
                     break

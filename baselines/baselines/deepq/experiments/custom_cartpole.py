@@ -11,7 +11,7 @@ from baselines import deepq
 from baselines.deepq.replay_buffer import ReplayBuffer
 from baselines.deepq.utils import ObservationInput
 from baselines.common.schedules import LinearSchedule
-
+from baselines.common.atari_wrappers import wrap_deepmind
 
 def model(inpt, num_actions, scope, reuse=False):
     """This model takes as input an observation and returns values of all actions."""
@@ -26,6 +26,8 @@ if __name__ == '__main__':
     with U.make_session(num_cpu=8):
         # Create the environment
         env = gym.make("CartPole-v0")
+        env = wrap_deepmind(env, frame_stack=True)
+
         # Create all the functions necessary to train the model
         act, train, update_target, debug = deepq.build_train(
             make_obs_ph=lambda name: ObservationInput(env.observation_space, name=name),
