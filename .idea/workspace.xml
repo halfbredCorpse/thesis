@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6b12530c-760d-4713-9c9c-6b99dd92a6a3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/thesis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thesis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/baselines/deepq/experiments/custom_cartpole.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/baselines/deepq/experiments/custom_cartpole.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/baselines/mnn_mcts/mnn_mcts.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/baselines/mnn_mcts/mnn_mcts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baselines/baselines/mnn_mcts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/baselines/baselines/mnn_mcts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/envs/FightingICEVsKeyboardPyVer/FightingICE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/envs/FightingICEVsKeyboardPyVer/FightingICE.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/envs/FightingICEVsKeyboardPyVer/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/gym-fightingice/gym_fightingice/envs/FightingICEVsKeyboardPyVer/src/Main.java" afterDir="false" />
@@ -231,59 +225,7 @@
               <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
               <item name="thesis" type="462c0819:PsiDirectoryNode" />
               <item name="gym-fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-              <item name="FightingICEVsKeyboardPyVer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-              <item name="FightingICEVsKeyboardPyVer" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="gym_fightingice" type="462c0819:PsiDirectoryNode" />
-              <item name="envs" type="462c0819:PsiDirectoryNode" />
-              <item name="FightingICEVsKeyboardPyVer" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="ai" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="gym-fightingice" type="462c0819:PsiDirectoryNode" />
               <item name="gym_fightingice.egg-info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="stable-baselines" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="stable-baselines" type="462c0819:PsiDirectoryNode" />
-              <item name="stable_baselines" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thesis" type="462c0819:PsiDirectoryNode" />
-              <item name="stable-baselines" type="462c0819:PsiDirectoryNode" />
-              <item name="stable_baselines" type="462c0819:PsiDirectoryNode" />
-              <item name="deepq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="thesis" type="b2602c69:ProjectViewProjectNode" />
@@ -594,10 +536,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.29392338" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.29392338" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" weight="0.32914925" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5019815" side_tool="true" weight="0.39748955" />
@@ -605,7 +546,7 @@
       <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.29009762" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4980185" visible="true" weight="0.30822873" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.4980185" visible="true" weight="0.30822873" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.3977433" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
